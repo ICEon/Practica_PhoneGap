@@ -10,31 +10,10 @@
 
 
 $(document).ready(function(e) {
-
-document.addEventListener("deviceready",function(){
-$('#B_Vibrar').tap(function(){
-navigator.notification.beep(1);
-});
-
-$('.btn').tap(function(){
-	var boton= (($(this).attr('class')).split(' '))[1];
-
-// alert(boton)
-switch(boton)
-{
-case 'v1':
-navigator.notification.vibrate(500);
-break;
-case 'v2':
-navigator.notification.vibrate(500);
-navigator.notification.vibrate(500);
-break;
-}
-});
-
-
-
-
-},false);
-});
+ document.addEventListener("deviceready",function(){
+  $('#B_Vibrar').tap(function(){
+    navigator.notification.vibrate(500);
+  });
+ },false); //deviceready
+}); //document ready
 
