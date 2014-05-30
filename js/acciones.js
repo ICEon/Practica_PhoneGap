@@ -16,5 +16,5 @@ $(document).ready(function(e) {
 	  navigator.notification.vibrate(500);
 	 }); //tap B_Vibrar
 	  
-  }); //device ready
+ },false); //device ready
 }); //document ready
