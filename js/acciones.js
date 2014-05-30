@@ -8,13 +8,15 @@
 });
 
 $(document).ready(function(e) {
-  document.addEventListener("deviceready",function(){
-	  
-	$("#B_Vibrar").tap(function (){
-		alert ("Here");
-			  navigator.notification.beep(1);
-	  navigator.notification.vibrate(500);
-	 }); //tap B_Vibrar
-	  
- },false); //device ready
-}); //document ready
+
+document.addEventListener("deviceready",function(){
+$('#B_Vibrar').tap(function(){
+navigator.notification.beep(1);
+});
+
+
+
+
+},false);
+});
+
